@@ -1,0 +1,8 @@
+.background {
+    background-image: url('../../Assets/candlewallpaper.jpg');
+    background-color: rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    
+}
