@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
   return (
-    <nav className='flex h-20 justify-between items-center bg-white'>
+    <nav className='flex h-20 justify-between items-center border-b-2 border-black bg-[#FAF9F6]'>
             {/* DESKTOP NAVIGATION */}
             <div className='flex items-center justify-between w-full m-2'>
                 <Link to='/'><img src={clueo} className='w-20 h-20'/></Link>
