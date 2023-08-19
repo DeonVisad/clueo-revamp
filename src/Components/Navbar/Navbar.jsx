@@ -37,10 +37,11 @@ const Navbar = () => {
 
             {/* MOBILE NAVIGATION */}
             <div className='flex m-2'>
-                    <span className='md:hidden cursor-pointer' onClick={toggleOpen}>{!open ? <RxHamburgerMenu /> : <span>X</span>}</span>
+                    <span className='md:hidden mr-4 text-xl'><AiOutlineShoppingCart /></span>
+                    <span className='md:hidden cursor-pointer text-xl mr-4' onClick={toggleOpen}>{!open ?  <RxHamburgerMenu /> : <span>X</span>}</span>
                     
             </div>
-            <ul className={!open ? 'hidden' : 'absolute top-0 left-0 w-full h-screen text-white bg-[#540b0e] flex flex-col justify-center items-center'}>
+            <ul className={!open ? 'hidden' : 'absolute top-0 left-0 w-full h-screen text-white bg-[#540b0e] flex flex-col justify-center items-center z-30'}>
                 <li className='p-2 text-3xl cursor-pointer'>Shop</li>
                 <li className='p-2 text-3xl cursor-pointer'>Our Story</li>
                 <li className='p-2 text-3xl cursor-pointer'>Contact</li>

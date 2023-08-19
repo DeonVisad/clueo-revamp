@@ -6,7 +6,7 @@ const initialState = {
             "id" : "1",
             "title" : "Forest Grove",
             "image" : "forestgrove",
-            "ingredients" : "Oak Moss, Amber, Leather ",
+            "ingredients" : "A calm and relaxing scent boasting accents of Oak Moss, Amber & Leather. Perfect for a reading session or bringing nature to you.",
             "price" : 24.99,
             "quantity": 1
         },
@@ -14,7 +14,7 @@ const initialState = {
             "id" : "2",
             "title" : "Date Night",
             "image" : "datenight",
-            "ingredients" : "Black Currant, Jasmine, Vanilla ",
+            "ingredients" : "A calm and relaxing scent boasting accents of Black Currant, Jasmine & Vanilla. Perfect for when you're getting ready for a special night. ",
             "price" : 24.99,
             "quantity": 1
         },
@@ -51,10 +51,15 @@ const allProductsSlice = createSlice({
     reducers: {
         allProducts: (state = initialState) => {
             return state;
+        },
+
+        sortProducts: (state = initialState) => {
+            state.products.sort((a,b) => (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0));
         }
     }
+
 })
 
-export const {allProducts} = allProductsSlice.actions;
+export const {allProducts, sortProducts} = allProductsSlice.actions;
 
 export default allProductsSlice.reducer;
