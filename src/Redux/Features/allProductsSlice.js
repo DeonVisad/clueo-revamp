@@ -6,7 +6,7 @@ const initialState = {
             "id" : "1",
             "title" : "Forest Grove",
             "image" : "forestgrove",
-            "ingredients" : "A calm and relaxing scent boasting accents of Oak Moss, Amber & Leather. Perfect for a reading session or bringing nature to you.",
+            "ingredients" : "A calm and relaxing scent boasting accents of Oak Moss, Amber & Leather. Perfect for a reading session.",
             "price" : 30,
             "quantity": 1,
             "sale": true,
@@ -15,7 +15,7 @@ const initialState = {
             "id" : "2",
             "title" : "Date Night",
             "image" : "datenight",
-            "ingredients" : "A calm and relaxing scent boasting accents of Black Currant, Jasmine & Vanilla. Perfect for when you're getting ready for a special night. ",
+            "ingredients" : "Elevate romance with Date Night. Indulge in Black Currant, Jasmine, and Vanilla scents for a captivating ambiance.",
             "price" : 30,
             "quantity": 1,
             "sale": true
@@ -24,7 +24,7 @@ const initialState = {
             "id" : "3",
             "title" : "Golden Hour",
             "image" : "goldenhour",
-            "ingredients" : "Sandlewood, Amber ",
+            "ingredients" : "Golden Hour Soy Candle: Sandlewood & Amber scents for serene ambiance. Elevate your space with elegance. Perfect for thoughtful gifting.",
             "price" : 30,
             "quantity": 1,
             "sale": true
@@ -33,7 +33,7 @@ const initialState = {
             "id" : "4",
             "title" : "Laundry Day",
             "image" : "laundry",
-            "ingredients" : "Linen, Lavender ",
+            "ingredients" : "Transform your home with Laundry Day. Embrace Linen and Lavender scents for a serene, refreshing atmosphere.",
             "price" : 30,
             "quantity": 1,
             "sale": true
@@ -42,7 +42,7 @@ const initialState = {
             "id" : "5",
             "title" : "Ocean Mist",
             "image" : "oceanmist",
-            "ingredients" : "Petigrain, Dark Musk",
+            "ingredients" : "Experience Ocean Mist, merging Petitgrain & Dark Musk. Immerse in a coastal escape with this enchanting blend.",
             "price" : 30,
             "quantity": 1,
             "sale": false
