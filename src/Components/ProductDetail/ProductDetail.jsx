@@ -6,6 +6,7 @@ import InfoBanner from '../InfoBanner/InfoBanner';
 import Navbar from '../Navbar/Navbar';
 import Filters from '../Filters/Filters';
 import { addToCart } from '../../Redux/Features/addToCartSlice';
+import Footer from '../Footer/Footer';
 
 
 const ProductPage = () => {
@@ -16,11 +17,11 @@ const ProductPage = () => {
     const thisProduct = productItems.find(prod => prod.id === productId)
 
   return (
-    <div className='flex flex-col h-screen'>
+    <div className='flex flex-col h-[100vh]'>
       <InfoBanner />
       <Navbar />
-      <div className='w-full'>
-        <div className='flex justify-center items-center background-banner h-[20vh]'></div>
+      
+        <div className='flex justify-center items-center background-banner h-[30vh]'></div>
         <div className='flex p-5 text-xs md:text-lg'>
           <span>/ </span><Link to='/shopall'><p> Shop</p></Link>
         </div>
@@ -36,7 +37,8 @@ const ProductPage = () => {
             <button className='bg-black text-white w-full md:w-[25%] py-4' onClick={() => dispatch(addToCart())}>Add To Cart</button>
           </div>
         </div>
-      </div>
+      
+      <Footer />
     </div>
   )
 }

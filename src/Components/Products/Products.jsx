@@ -8,6 +8,7 @@ import './Products.css';
 
 import {FaStar} from 'react-icons/fa'
 import Filters from '../Filters/Filters';
+import Footer from '../Footer/Footer';
 
 function Products() {
     const productItems = useSelector((state) => state.allProducts.products);
@@ -19,10 +20,9 @@ function Products() {
 
     
   return (
-    <div className='flex flex-col h-screen'>
-      <div className='flex justify-center items-center background-banner h-[60vh]'>
+    <div className='flex flex-col'>
+      <div className='flex justify-center items-center background-banner'>
         <h1 className='text-3xl font-bold text-white m-10 '>SHOP ALL</h1>
-        {/* <h2 className='text-white' onClick={() => dispatch(sortProducts())}>Sort</h2> */}
       </div>
       <div className='flex p-5'>
         <Filters />
@@ -48,7 +48,6 @@ function Products() {
           )
         })}
       </div>
-      
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import CartModal from '../CartModal/CartModal';
 
 import clueo from '../../Assets/CLUEO HUGE.png';
 import {RxHamburgerMenu} from 'react-icons/rx';
@@ -9,6 +10,7 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
 
     const toggleOpen = () => {
         setOpen(!open)
@@ -16,6 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className='flex h-20 justify-between items-center border-b-2 border-black bg-[#FAF9F6]'>
+            <CartModal openModal={openModal} onClose={() => setOpenModal(false)} />
             {/* DESKTOP NAVIGATION */}
             <div className='flex items-center justify-between w-full m-2'>
                 <Link to='/'><img src={clueo} className='w-20 h-20'/></Link>
@@ -27,7 +30,7 @@ const Navbar = () => {
                 <div className='hidden md:flex'>
                 <ul className='flex'>
                     <li className='px-2 text-2xl'><BsPerson /></li>
-                    <li className='px-2 text-2xl'><AiOutlineShoppingCart /></li>
+                    <li className='px-2 text-2xl' onClick={() => setOpenModal(true)}><AiOutlineShoppingCart /></li>
                 </ul>
             </div>
             </div>
