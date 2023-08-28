@@ -13,22 +13,26 @@ function CartModal({openModal, onClose}) {
   
 
 
-  if(!openModal) return null;
 
     
 
   return (
-    <div className='w-[100%] h-[100%] bg-black/50'>
-      <div className='cartModal-container'>
-        <h3>My Cart</h3>
+    <div className=' flex flex-col h-full '>
+      <div className=''>
+        <div className='flex items-start w-full border-b-2 border-black'>
+          <h3 className='text-2xl font-serif m-4'>Shopping Bag</h3>
+        </div>
+        <div>
+          
+        </div>
         
          {cart.cartItems.length === 0 && (
           <div className='cart-items-empty'>No items are added.</div>
         )}
-          <div className='cart-items-container'>
+          <div className='flex flex-col h-full w-full items-center'>
             {cart.cartItems.map((item) => (
-              <div key={item.id} className='cart-items-row'>
-                <img className='cart-list-image' src={require('../../Assets/' + item.image + '.jpg')} alt={item.title}/>
+              <div key={item.id} className='flex'>
+                <img className='w-[5vw] h-auto' src={require('../../Assets/' + item.image + '.jpg')} alt={item.title}/>
                 <h6 className='cart-item-title'>{item.title}</h6>
                 <h6 className='cart-item-title'>${item.price} x {item.quantity}</h6>
                 <div className='quantity-container'>
@@ -52,4 +56,4 @@ function CartModal({openModal, onClose}) {
   )
 }
 
-export default CartModal
+export default CartModal;
