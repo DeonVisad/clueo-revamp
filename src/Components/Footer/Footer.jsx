@@ -4,7 +4,7 @@ import {FiInstagram} from 'react-icons/fi';
 
 function Footer() {
   return (
-    <footer className='flex flex-col md:flex-row w-[100%] justify-around items-center md:justify-center md:items-around bg-[#FFDDD2] font-serif'>
+    <footer className='flex flex-col md:flex-row justify-around items-center md:justify-center md:items-around border-t-[1px] border-black bg-[#FAF9F6] font-serif'>
 
       <div className='mt-4 md:mt-2 border-b-2 border-black md:border-none w-[40vw] flex flex-col justify-between'>
         <p className='cursor-pointer'>Our Story</p>
