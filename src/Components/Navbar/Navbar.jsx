@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link to='/'><img src={clueo} className='w-20 h-20'/></Link>
                     <ul className='mx-3 hidden md:flex cursor-pointer'>
                         <Link to='/shopall'><li className='px-2'>Shop</li></Link>
-                        <li className='px-2'>Our Story</li>
+                        <Link to='/ourstory'><li className='px-2'>Our Story</li></Link>
                         <li className='px-2'>Contact</li>
                     </ul>
                     <div className='hidden md:flex'>
