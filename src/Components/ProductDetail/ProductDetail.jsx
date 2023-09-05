@@ -24,7 +24,7 @@ const ProductPage = () => {
       <InfoBanner />
       <Navbar />
       
-        <div className='flex justify-center items-center background-banner h-[30vh]'></div>
+        <div className='flex justify-center items-center background-banner h-[50vh]'></div>
         <div className='flex p-5 text-xs md:text-lg'>
           <span>/ </span><Link to='/shopall'><p> Shop</p></Link>
         </div>
@@ -41,7 +41,7 @@ const ProductPage = () => {
                   <h2 className='text-3xl font-serif'>{product.title}</h2>
                   {product.sale === true ? (<h3 className='font-semibold text-[#540b0e] my-2'>${product.price - (product.price * .20).toFixed(2)}</h3>) : (<h3 className='font-semibold flex'>${product.price}</h3>)}
                   <p className='text-start my-6 md:w-[30vw]'>{product.ingredients}</p>
-                  <button className='bg-black text-white w-full md:w-[25%] py-4' onClick={() => dispatch(addToCart(product))}>Add To Cart</button>
+                  <button className='bg-black text-white w-full md:w-[50%] py-4' onClick={() => dispatch(addToCart(product))}>Add To Cart</button>
                 </div>
               </div>
             )
