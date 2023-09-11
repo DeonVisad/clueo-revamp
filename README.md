@@ -11,7 +11,6 @@ Welcome to Clueo Candles, an environmentally friendly e-commerce website built u
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Project Structure](#project-structure)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
@@ -29,12 +28,12 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 1. **Clone the repository** to your local machine:
    ```shell
-   git clone https://github.com/your-username/clueo-candles.git
+   git clone https://github.com/your-username/clueo-revamp.git
    ```
 
 2. **Navigate to the project directory**:
    ```shell
-   cd clueo-candles
+   cd clueo-revamp
    ```
 
 3. **Install the required dependencies**:
@@ -49,31 +48,6 @@ Before you begin, ensure you have the following prerequisites installed on your 
 
 5. **Open your browser** and visit [http://localhost:3000](http://localhost:3000) to explore Clueo Candles.
 
-## Project Structure
-
-The project structure is organized as follows:
-
-```
-clueo-candles/
-│
-├── src/
-│   ├── actions/           # Redux actions
-│   ├── components/        # Reusable UI components
-│   ├── containers/        # Container components
-│   ├── reducers/          # Redux reducers
-│   ├── styles/            # CSS and styling files
-│   ├── App.js             # Main application component
-│   ├── index.js           # Entry point of the application
-│   └── ...
-│
-├── public/
-│   ├── index.html         # HTML template
-│   └── ...
-│
-├── package.json           # Project dependencies
-├── README.md              # Project README (You are here)
-└── ...
-```
 
 ## Features
 
